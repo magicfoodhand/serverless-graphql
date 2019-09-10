@@ -1,6 +1,7 @@
 import React from 'react'
 import GraphiQL from 'graphiql'
 import 'graphiql/graphiql.css'
+import './App.css'
 
 function graphQLFetcher(graphQLParams) {
   return fetch('/.netlify/functions/graphql', {
