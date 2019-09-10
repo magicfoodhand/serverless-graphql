@@ -1,11 +1,8 @@
-## Create-React-App-Lambda
+## Serverless GraphQL
 
-This project is a reference demo showing you how to use [Create React App v3](https://github.com/facebookincubator/create-react-app) and [netlify-lambda v1](https://github.com/netlify/netlify-lambda) together in a [Netlify Dev](https://github.com/netlify/netlify-dev-plugin) workflow. You can clone this and immediately be productive with a React app with serverless Netlify Functions in the same repo. Alternatively you can deploy straight to Netlify with this one-click Deploy:
+This project is built off of [create-react-app-lambda](https://github.com/netlify/create-react-app-lambda). You can clone this and immediately be productive with a React app with serverless Netlify Functions and GraphQL in the same repo. Alternatively you can deploy straight to Netlify with this one-click Deploy:
 
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/create-react-app-lambda)
-
-> ⚠️NOTE: You may not need this project at all. [Netlify Dev](https://github.com/netlify/netlify-dev-plugin) works with `create-react-app` out of the box! Only use `netlify-lambda` if you need a build step for your functions, eg if you want to use Babel or TypeScript ([see its README for details](https://github.com/netlify/netlify-lambda/blob/master/README.md#netlify-lambda)).
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lavabear/serverless-graphql)
 
 ## Project Setup
 
@@ -15,10 +12,6 @@ This project is a reference demo showing you how to use [Create React App v3](ht
 
 As an example, we've included a small `src/lambda/hello.js` function, which will be deployed to `/.netlify/functions/hello`. We've also included an async lambda example using async/await syntax in `async-dadjoke.js`.
 
-## Video
-
-Learn how to set this up yourself (and why everything is the way it is) from scratch in a video: https://www.youtube.com/watch?v=3ldSM98nCHI
-
 ## Babel/webpack compilation
 
 All functions (inside `src/lambda`) are compiled with webpack using Babel, so you can use modern JavaScript, import npm modules, etc., without any extra setup.
@@ -27,9 +20,9 @@ All functions (inside `src/lambda`) are compiled with webpack using Babel, so yo
 
 ```bash
 ## prep steps for first time users
-npm i -g netlify-cli # Make sure you have the [Netlify CLI](https://github.com/netlify/cli) installed
-git clone https://github.com/netlify/create-react-app-lambda ## clone this repo
-cd create-react-app-lambda ## change into this repo
+yarn global add netlify-cli # Make sure you have the [Netlify CLI](https://github.com/netlify/cli) installed
+git clone https://github.com/lavabear/serverless-graphql ## clone this repo
+cd serverless-graphql ## change into this repo
 yarn # install all dependencies
 
 ## done every time you start up this project
@@ -46,7 +39,7 @@ You can view the project locally via Netlify Dev, via `localhost:8888`.
 Each function will be available at the same port as well:
 
 - `http://localhost:8888/.netlify/functions/hello` and 
-- `http://localhost:8888/.netlify/functions/async-dadjoke`
+- `http://localhost:8888/.netlify/functions/graphql`
 
 ## Deployment
 
