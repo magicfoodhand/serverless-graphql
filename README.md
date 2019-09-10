@@ -1,6 +1,8 @@
 ## Serverless GraphQL
 [![Netlify Status](https://api.netlify.com/api/v1/badges/00484b8b-80cd-4ed3-a949-ee7602b2b04d/deploy-status)](https://app.netlify.com/sites/netlify-functions-graphql/deploys)
 
+## [Example React App](https://github.com/lavabear/serverless-graphql-react)
+
 This project is built off of [create-react-app-lambda](https://github.com/netlify/create-react-app-lambda). You can clone this and immediately be productive with a React app with serverless Netlify Functions and GraphQL in the same repo. Alternatively you can deploy straight to Netlify with this one-click Deploy:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lavabear/serverless-graphql)
