@@ -1,6 +1,6 @@
 {
-  "name": "create-react-app-lambda",
-  "version": "0.5.0",
+  "name": "serverless-graphql",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "graphiql": "^0.14.2",
