@@ -2,12 +2,12 @@ import schema from '../schema'
 import resolvers from '../resolvers'
 import Responses from '../responses'
 
-import { graphql, buildSchema } from 'graphql'
+import { graphql } from 'graphql'
 
 const sharedContext = {}
 
 let runGraphql = ({query, variables, operationName}) => {
-    return graphql(buildSchema(schema), query, resolvers, sharedContext, variables, operationName)
+    return graphql(schema, query, resolvers, sharedContext, variables, operationName)
         .then(Responses.success)
         .catch(Responses.error)
 }

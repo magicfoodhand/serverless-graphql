@@ -1,7 +1,7 @@
-import gql from 'graphql-tag'
+import {buildSchema} from 'graphql'
 
-export default gql`
+export default buildSchema(`
   type Query {
     hello: String!
   }
-`
+`)
